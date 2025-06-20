@@ -1,0 +1,85 @@
+/* staff-dashboard/src/components/AdminNavbar.css */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 0 2rem;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.admin-navbar-brand a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.admin-navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* For vertical alignment of items */
+}
+
+.admin-navbar-links li {
+    margin-left: 15px; /* Spacing between nav items */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for NavLink items */
+.nav-item {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 8px 12px; /* Clickable area */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.nav-item.active { /* Style for the active NavLink */
+    background-color: #4a4a4e; /* Or your theme's active color */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.admin-user-welcome {
+    color: #b0b0b0; /* Slightly dimmer welcome text */
+    font-size: 0.9rem;
+    margin-right: 15px; /* Space before logout button */
+}
+
+.admin-nav-button.logout {
+    background-color: #ffffff;
+    color: #121212;
+    border: none;
+    padding: 7px 14px; /* Slightly adjusted padding */
+    border-radius: 6px; /* Consistent radius */
+    font-size: 0.85rem; /* Slightly smaller */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.admin-nav-button.logout:hover {
+    background-color: #f0f0f0;
+}
+
+/* This will push Welcome & Logout to the right if it's the last flex items group */
+.user-info-item-wrapper {
+    margin-left: auto; /* Pushes this group to the far right */
+    display: flex;
+    align-items: center;
+}

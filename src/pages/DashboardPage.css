@@ -1,0 +1,36 @@
+/* staff-dashboard/src/pages/DashboardPage.css */
+.dashboard-page-container {
+    /* Page-specific padding is handled by <main> in App.css */
+}
+
+.dashboard-page-container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem; /* Slightly smaller for dashboard sections */
+}
+
+.applications-table-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling for table on small screens */
+    /* .admin-card class from App.css provides background, padding, border-radius, shadow */
+}
+
+/* Table itself will use .admin-table styles from App.css */
+
+/* To limit bio/proposed class idea text with ellipsis if too long in table cell */
+.bio-cell {
+    max-width: 250px; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Specific button colors if not covered by global .admin-table .action-button */
+.action-button.approve {
+    background-color: #4CAF50; /* Green */
+}
+.action-button.contacted {
+    background-color: #f0ad4e; /* Orange/Yellow */
+}
+.action-button.decline {
+    background-color: #cf6679; /* Red */
+}
